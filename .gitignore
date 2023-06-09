@@ -1,0 +1,77 @@
+######################################################################
+# Build Tools
+
+.gradle
+/build/
+gradle/wrapper/gradle-wrapper.jar
+
+!.mvn/wrapper/maven-wrapper.jar
+*.class
+rebel.xml
+# IDE
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/*
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+######################################################################
+# Others
+*.log
+*.xml.versionsBackup
+*.swp
+
+
+*.jar
+*target*/
+*dist*/
+*node_modules*/
+
+
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml
+
+
+*.DS_Store
+backend-vue/node_modules/
+backend-vue/dist/
+backend-vue/npm-debug.log*
+backend-vue/yarn-debug.log*
+backend-vue/yarn-error.log*
+backend-vue/**/*.log
+
+backend-vue/tests/**/coverage/
+backend-vue/tests/e2e/reports
+backend-vue/selenium-debug.log
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.local
+
+package-lock.json
+yarn.lock
+
+deploy/*

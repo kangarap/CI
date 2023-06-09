@@ -1,0 +1,21 @@
+name: 阿里云盘每日签到
+
+on:
+  schedule:
+    - cron: '00 01 * * *'
+  workflow_dispatch:
+jobs:
+  signin:
+    name: 阿里云盘每日签到
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ImYrS/aliyun-auto-signin@main
+        with:
+          REFRESH_TOKENS: ${{ secrets.ALIPAN_REFRESH_TOKENS }}
+          GP_TOKEN: ${{ secrets.GP_TOKEN}}
+          PUSH_TYPES: 'Telegram'
+          DO_NOT_REWARD: 'true'
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+
